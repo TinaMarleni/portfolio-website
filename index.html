@@ -10,19 +10,20 @@
   <link rel="manifest" href="/img/ico/site.webmanifest">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
 </head>
-
 <body>
   <header>
     <svg width="600px" height="100px" viewBox="0 0 600 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
       <title>Artboard</title>
       <desc>Created with Sketch.</desc>
-      <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect id="Rectangle" stroke="#29C6C6" stroke-width="3" x="1.5" y="1.5" width="597" height="97"></rect>
-        <text id="Tina-Schwegler-Logo" font-family="OpenSans-Light, Open Sans" font-size="33" font-weight="300" letter-spacing="4.95" fill="#000000">
-          <tspan x="100.735742" y="64">Tina Schwegler Logo </tspan>
-        </text>
+      <g id="Artboard">
+      	<text transform="matrix(1 0 0 1 114.4895 50)" enable-background="new    "><tspan x="0" y="0" fill="#474746" font-family="'Lato-Light'" font-size="33.3989" letter-spacing="1">Tina Marleni </tspan><tspan x="203.763" y="0" fill="#474746" font-family="'Lato-Bold'" font-size="33.3989" letter-spacing="1">Schwegler</tspan></text>
+      	<text transform="matrix(1 0 0 1 196.4192 87.4473)" fill="#474746" font-family="'Lato-Bold'" font-size="20.2418">design a better world</text>
       </g>
     </svg> </header>
   <nav>
@@ -46,7 +47,8 @@
     <!--work section-->
     <div>
       <div>
-        <h2> My work </h2>
+        <h2 id="background"> My work </h2>
+
         <!--first project-->
         <div>
           <!--first row for column-->
@@ -62,8 +64,10 @@
             <h3> Tattoolist </h3>
             <p> From the competition analysis, over first wireframes, up to the user test I developed a tattoo application. An increasing number of bookings should prove that the online booking details help to connect tattoo artists and fans.
             </p>
-            <!--buttonlink-->
-            <a href="tattoolist.html">Read more</a>
+            <!--buttonlink Davor:
+            <a href="tattoolist.html">Read more</a>-->
+            <a href="tattoolist.html" class="button">Read more</a>
+
             <br>
           </div>
         </div>
@@ -82,8 +86,9 @@
             <h3> Bikevation – Every kilometer counts</h3>
             <p> At the CycleHack we created a userjourney to illustrate that: We created a user journey that illustrates, that every cycled kilometer has an influence on urban change. The detailed user flow was sketched via high-fidelity wireframe.
             </p>
-            <!--buttonlink-->
-            <a href="">Read more</a>
+            <!--buttonlink
+            <a href="">Read more</a> -->
+            <a href="" class="button">Read more</a>
           </div>
         </div>
       </div>
@@ -93,7 +98,7 @@
     <div>
       <div>
         <h3>Get in Touch</h3>
-        <p>Feel free to <a href="tel:+4915778968741">Call Me</a> or forward simply an <a href="mailto:marlenis.sunrise@gmail.com">E-Mail</a> </p>
+        <p>Feel free to <a href="tel:+4915778968741"class="button contact">Call Me</a> or forward simply an <a href="mailto:marlenis.sunrise@gmail.com" class="button contact">Send me an email</a></p>
       </div>
       <div>
         <a href="https://www.linkedin.com/in/tina-schwegler/" target="_blank">
