@@ -35,14 +35,6 @@ h2 {
   color: rgba(238,10,91,1);
 }
 
-#background {
-background-color: rgba(238,10,91,0.23);
-}
-
-#specialtext {
-       color: rgba(238,10,91,0.7);
-}
-
 h3 {
   font-size: 1.70em;
   font-weight: 400;
@@ -51,6 +43,18 @@ h3 {
 h4 {
   font-size: 1.35em;
   font-weight: 400;
+}
+
+#background {
+background-color: rgba(238,10,91,0.23);
+}
+
+#specialtext {
+       color: rgba(238,10,91,0.7);
+}
+
+.intro {
+    font-weight: bold;
 }
 
 img {
