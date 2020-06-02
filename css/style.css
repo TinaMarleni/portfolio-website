@@ -5,9 +5,6 @@ dark lila: rgba(50,21,163,1)
 rot: rgba(238,10,91,1);
 gelb: rgba(252,252,195,0.5)
 dunkelrot rgba(153,19,43,1)
-
-grün: rgba(76,182,158,1)
-darkgreen: rgba(66,134,118,1);
 */
 body {
   background-color: #ffffff;
@@ -27,8 +24,8 @@ header {
   border-bottom: 1px solid #4a4a4a;
   text-align: center;
   webkit-box-shadow: 0px 4px 4px 0px rgba(50, 50, 50, 0.55);
-  moz-box-shadow:    0px 4px 4px 0px rgba(50, 50, 50, 0.55);
-  box-shadow:         0px 4px 4px 0px rgba(50, 50, 50, 0.55);
+  moz-box-shadow: 0px 4px 4px 0px rgba(50, 50, 50, 0.55);
+  box-shadow: 0px 4px 4px 0px rgba(50, 50, 50, 0.55);
   position: fixed;
   width: 100%;
 }
@@ -46,9 +43,10 @@ nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: rgb(238, 10, 91);
+  color: #000000;
 }
 
+/*
 .navigation a:hover {
   padding: 0 15px;
   text-transform: uppercase;
@@ -56,6 +54,44 @@ nav>ul>li>a {
   color: rgb(238, 10, 91);
   background-color: rgba(238, 10, 91, 0.23);
   text-decoration: none;
+}
+ */
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.container a {
+  margin: 0 auto;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+/* Brackets go out */
+.brackets a:before, .brackets a:after {
+  opacity: 0;
+  top: 0px;
+  transition: all 0.3s;
+}
+
+.brackets a:before {
+  content: '(';
+  left: 0px;
+  transform: translateX(10px);
+}
+
+.brackets a:after {
+  content: ')';
+  right: 0px;
+  transform: translateX(-10px);
+}
+
+.brackets a:hover:before, .brackets a:hover:after {
+  opacity: 1;
+  transform: translateX(0px);
 }
 
 main {
@@ -120,7 +156,6 @@ a {
 
 a:hover {
   color: rgba(238, 10, 91, 1);
-  text-decoration: underline;
   /* Underlining when hovering over a link */
 }
 
@@ -131,6 +166,7 @@ a:hover {
   color: #ffffff !important;
   /* needed to override the default link color */
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 17px;
   border-bottom: 2px solid rgba(238, 10, 91, 1);
@@ -139,7 +175,7 @@ a:hover {
 }
 
 .button:hover {
-  opacity: 0.7;
+  opacity: 0.8;
   /* Reduces the opacity of the button */
   text-decoration: none;
   background-color: rgba(238, 10, 91, 1) !important;
@@ -173,7 +209,8 @@ a:hover {
 
 /* Layout styling */
 .container {
-  padding: 0 15px;   /* 0 top and bottom, 15 px left and right */
+  padding: 0 15px;
+  /* 0 top and bottom, 15 px left and right */
 }
 
 .row {
@@ -181,10 +218,25 @@ a:hover {
   /* 25px top and bottom, 0 left and right */
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 #work .row {
   padding-bottom: 20px;
   border-bottom: 1px solid #4a4a4a;
 }
+
+#about-page h2 {
+  margin-top: 0;
+}
+
+/*
+#about-page .row {
+  padding-top: 5px;
+  }*/
 
 /* Unterzeile nur bei secector work */
 #hero h1 {
@@ -195,3 +247,112 @@ a:hover {
 .logo {
   max-width: 250px;
 }
+
+[class*="col-"] {
+  float: left;
+  padding: 0 15px;
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+#sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(100, 3px);
+  }
+
+  to {
+    transform: translate(130px, 3px);
+  }
+}
+
+#cloud-front {
+  animation: 7s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(0px, 15px);
+  }
+
+  to {
+    transform: translate(40px, 15px);
+  }
+}
+
+#cloud-back {
+  animation: 3s cloud-move-reverse infinite alternate linear;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  #hero {
+    text-align: center;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {}
