@@ -28,6 +28,7 @@ header {
   box-shadow: 0px 4px 4px 0px rgba(50, 50, 50, 0.55);
   position: fixed;
   width: 100%;
+  z-index: 100;
 }
 
 nav>ul {
@@ -71,6 +72,10 @@ nav>ul>li>a {
 }
 
 /* Brackets go out */
+.container.brackets {
+  padding: 10px;
+}
+
 .brackets a:before, .brackets a:after {
   opacity: 0;
   top: 0px;
@@ -259,9 +264,22 @@ a:hover {
   100% {fill: #f76414;}
 }
 
+@keyframes color-changetest {
+  0% {fill: #0000ff;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
 #sun {
   animation: 4s color-change infinite alternate linear;
 }
+
+
+#test {
+  animation: 4s color-changetest infinite alternate linear;
+}
+
+
 
 @keyframes cloud-move {
   from {
