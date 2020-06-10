@@ -255,7 +255,6 @@ a:hover {
 
 [class*="col-"] {
   float: left;
-  padding: 0 15px;
 }
 
 @keyframes color-change {
