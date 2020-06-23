@@ -19,21 +19,21 @@
 <body>
   <header>
     <div class="container">
-      <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="280px" height="71px" viewBox="0 0 280 71" enable-background="new 0 0 280 71" xml:space="preserve">
+      <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500.5px" height="40px" viewBox="0 0 500.5 40" enable-background="new 0 0 500.5 40" xml:space="preserve">
         <title>Artboard</title>
         <desc>Created with Sketch.</desc>
         <g id="Artboard">
           <text transform="matrix(1 0 0 1 6.209 30.3115)" fill="#474746" font-family="'Lato-Light'" font-size="26.2115">Tina Marleni </text>
           <text transform="matrix(1 0 0 1 151.8096 30.3115)" fill="#474746" font-family="'Lato-Bold'" font-size="26.2115">Schwegler </text>
-          <text transform="matrix(1 0 0 1 70.5068 59.6992)" fill="#474746" font-family="'Lato-Bold'" font-size="15.8858">design a better world</text>
+          <text transform="matrix(1 0 0 1 286.8496 30.3115)" fill="#474746" font-family="'Lato-Light'" font-size="15.8858">DESIGN A BETTER WORLD</text>
         </g>
       </svg>
       <nav>
-          <ul class="container brackets">
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+        <ul class="container brackets">
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -43,31 +43,46 @@
 
     <div id="hero">
       <div class="container">
-        <div>
-          <picture>
-            <source src="../img/Profil_TinaSchwegler.jpg" media="(max-width:767px)"> <img source src="./img/Profil_TinaSchwegler.jpg" alt="Profil Tina Schwegler">
-          </picture>
+        <div class="row">
+          <div class="column col-md-6 col-lg-7">
+            <picture>
+              <source src="../img/Profil_TinaSchwegler.jpg" media="(max-width:767px)"> <img source src="./img/Profil_TinaSchwegler.jpg" alt="Profil Tina Schwegler">
+            </picture>
+          </div>
+          <!--second row for column id="specialtext" optional -->
+          <div class="column col-md-6 col-lg-5">
+            <div class="my-container">
+              <div>
+                <h3>Tina Marleni, <br>true by heart munich based creative mind follows her problem solving attitudes in her private and professional life.</h3>
+                <p>During my long experience as designer, I developed multifunctional trends and combined them into significant corporate identities.
+                  <br>I aim to create user experiences that help to shape new habits for a sustainable lifestyles and solutions. </p>
+                <p>Currently I am available for full-time or freelance work. But I also like to get involved for charitable purposes in the field of sustainable living related to climate change.</p>
+                <a href="files/CV_TinaSchwegler.pdf" class="button"> Download my resume </a>
+
+                <h3>UX/UI Skills</h3>
+<p><b>UX Research: </b>Competition analysis, User research, Persona, User interview, User journey, User flow, Card
+                sorting, Sitemap, Design principles, Storytelling
+                <br><b>UX Design: </b>Low-fidelity prototype, Rapid prototype, High-fidelity wireframes, Mockups, Styleguide, Clickable prototype
+                <br><b>Public relations: </b>Corporate identity, Social media strategy
+                <br><b>Graphic Design: </b>Corporate design, Event design, Infographic-Design</p>
+                <h3>Tools</h3>
+                <p><b>Coding: </b>XHTML, CSS, JavaScript, ATOM, GitHub, Wordpress, Typo3
+                <br><b>Design: </b>InDesign, Illustrator, Photoshop, Sketch, Adobe XD, Invision, Balsamiq & Prott</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="container">
-        <div id="specialtext">
-          <h1>My story</h1>
-          <p>During my career as graphic designer my focus was on creating corporate strategy & branding. I love the conceptual development of a unique corporate design for all applications.</p>
-          <p>User research methods are something that I follow with curiosity. Agile structures, meetups or hackathons - everything related to the digitization process pushes me forward.
-            My empathy for users, who are not at all tech savvy motivates me to solve even the last problems via user interviews or user reports. I am thankful to involve this great thirst for knowledge into teamwork.</p>
-          <span>My personal mission is not only to create something beautiful. The design has only a sustainable effect, if it creates value for the environment.</span>
-          <a href="files/CV_TinaSchwegler.pdf" class="button"> Download my resume </a>
-        </div>
-      </div>
+      <!--second row for column
       <div id="about-page">
         <div class="container">
           <h2> <span> Skills & Tools </span> </h2>
           <div class="row">
             <div class="col-md-6">
               <h2>Relevant skills</h2>
-              <h3>UX Methoden</h3>
-              <ul>
+              <ul style="text-align: left;">
+                <h3>UX Methoden</h3>
                 <li>User ResearchCompetition Analysis</li>
                 <li>Persona</li>
                 <li>User Interview</li>
@@ -81,8 +96,8 @@
                 <li>Information Architecture</li>
               </ul>
 
-              <h3>Design</h3>
-              <ul>
+              <ul style="text-align: left;">
+                <h3>Design</h3>
                 <li>Low-fidelity Prototyping</li>
                 <li>Rapid Prototyping</li>
                 <li>High-fidelity Wireframes</li>
@@ -99,8 +114,8 @@
 
             <div>
               <h2>My tools</h2>
-              <h3>Visual Design</h3>
-              <ul>
+              <ul style="text-align: left;">
+                <h3>Visual Design</h3>
                 <li>InDesign</li>
                 <li>Illustrator</li>
                 <li>Photoshop</li>
@@ -110,25 +125,26 @@
                 <li>Balsamiq & Prott</li>
               </ul>
               <ul>
-                <h3>Coding</h3>
-                <li>Wordpress</li>
-                <li>Typo 3</li>
-                <li>XHTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>ATOM</li>
-                <li>GitHub</li>
-              </ul>
-            </div>
+                <ul style="text-align: left;">
+                  <h3>Coding</h3>
+                  <li>Wordpress</li>
+                  <li>Typo 3</li>
+                  <li>XHTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>ATOM</li>
+                  <li>GitHub</li>
+                </ul>
+            </div>-->
 
-          </div>
-        </div>
-      </div>
+    </div>
+    </div>
+    </div>
   </main>
   <footer>
     <div>
       <div class="container">
-        <h3>Get in Touch</h3>
+        <h4>Get in Touch</h4>
         <p>Feel free to <a href="tel:+4915778968741" class="button contact">Call Me</a> or forward simply an <a href="mailto:marlenis.sunrise@gmail.com" class="button contact">Send me an email</a></p>
       </div>
       <div class="container">
