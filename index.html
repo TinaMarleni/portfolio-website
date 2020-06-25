@@ -19,20 +19,21 @@
 <body>
 
   <header>
-    <div class="container">
-      <!--   <img class="logo" src="./img/Logo_TinaSchwegler.png" alt="Logo">
-    id="Artboard"
-  -->
-  <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     width="500.5px" height="40px" viewBox="0 0 500.5 40" enable-background="new 0 0 500.5 40" xml:space="preserve">
-    <title>Artboard</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Artboard">
-      <text transform="matrix(1 0 0 1 6.209 30.3115)" fill="#474746" font-family="'Lato-Light'" font-size="26.2115">Tina Marleni </text>
-      <text transform="matrix(1 0 0 1 151.8096 30.3115)" fill="#474746" font-family="'Lato-Bold'" font-size="26.2115">Schwegler </text>
-      <text transform="matrix(1 0 0 1 286.8496 30.3115)" fill="#474746" font-family="'Lato-Light'" font-size="15.8858">DESIGN A BETTER WORLD</text>
-    </g>
-  </svg>
+    <div class="logoMenu">
+      <svg version="1.1" class="logoDesktop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  height="40px" viewBox="0 0 500.5 40" enable-background="new 0 0 500.5 40" xml:space="preserve">
+        <desc>Created with Sketch.</desc>
+        <text transform="matrix(1 0 0 1 6.2087 30.3115)" fill="#474746" font-family="'Lato-Light'" font-size="26.2115">Tina Marleni </text>
+        <text transform="matrix(1 0 0 1 151.8093 30.3115)" fill="#474746" font-family="'Lato-Bold'" font-size="26.2115">Schwegler </text>
+      </svg>
+
+      <svg version="1.1" class="logoMobil" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="279.083px" height="60.5px" viewBox="0 0 279.083 60.5" enable-background="new 0 0 279.083 60.5"
+        xml:space="preserve">
+        <desc>Created with Sketch.</desc>
+        <text transform="matrix(1 0 0 1 6.2085 30.3115)" fill="#474746" font-family="'Lato-Light'" font-size="26.2115">Tina Marleni </text>
+        <text transform="matrix(1 0 0 1 151.8091 30.3115)" fill="#474746" font-family="'Lato-Bold'" font-size="26.2115">Schwegler </text>
+        <text transform="matrix(1 0 0 1 45.1831 52.9785)" fill="#474746" font-family="'Lato-Light'" font-size="15.8858">DESIGN A BETTER WORLD</text>
+      </svg>
+
       <!--
       <nav>
         <ul class="navigation">
@@ -41,13 +42,25 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+
+        davor
+        <ul class="container brackets">
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
         -->
       <nav>
-          <ul class="container brackets">
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+        <ul id="menu" class="container brackets">
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger-menu-icon">
+          <a href="" id="hamburgerMenu">
+            <img src="https://image.flaticon.com/icons/svg/545/545705.svg" alt="" width="25px">
+          </a>
+        </div>
       </nav>
     </div>
   </header>
@@ -71,71 +84,53 @@
             <picture>
               <!--beide müssen nicht geschlossen werden-->
               <source srcset="./img/01_tattoolist_profil_480x240.png" media="(max-width:799px)">
-              <img src="./img/01_tattoolist_profil_1200x800.png" alt="tattoolist profil image">
+              <img src="./img/01_tattoolist_profil_480x240.png" alt="tattoolist profil image">
             </picture>
           </div>
           <!--second row for column-->
           <div class="column col-md-6 col-lg-5">
-<div class="my-container">
-            <h3>Tattoolist</h3>
-            <p> From the competition analysis, over first wireframes, up to the user test I developed a tattoo application. An increasing number of bookings should prove that the online booking details help to connect tattoo artists and fans.
-            </p>
-            <!--buttonlink Davor:
+              <h3>Tattoolist</h3>
+              <p> From the competition analysis, over first wireframes, up to the user test I developed a tattoo application. An increasing number of bookings should prove that the online booking details help to connect tattoo artists and fans.
+              </p>
+              <!--buttonlink Davor:
             <a href="tattoolist.html">Read more</a>-->
-            <a href="tattoolist.html" class="button">Read more</a>
+              <a href="tattoolist.html" class="button">Read more</a>
+          </div>
+          <!--second project-->
+
+          <!--first row for column-->
+          <div class="column col-md-6 col-lg-7">
+            <picture>
+              <!--beide müssen nicht geschlossen werden-->
+              <source srcset="./img/01_bikevation_profil_480x240.png" media="(max-width:799px)">
+              <img src="./img/01_bikevation_profil_480x240.png" alt="tattoolist profil image">
+            </picture>
+          </div>
+          <!--second row for column-->
+          <div class="column col-md-6 col-lg-5">
+              <h3> Bikevation</h3>
+              <p> Every kilometer counts
+                <br> At the CycleHack we created a userjourney to illustrate that: We created a user journey that illustrates, that every cycled kilometer has an influence on urban change. The detailed user flow was sketched via high-fidelity
+                wireframe.
+              </p>
+              <!--buttonlink
+            <a href="">Read more</a> -->
+              <a href="" class="button">Read more</a>
           </div>
         </div>
-        <!--second project-->
-
-        <!--first row for column-->
-        <div class="column col-md-6 col-lg-7">
-          <picture>
-            <!--beide müssen nicht geschlossen werden-->
-            <source srcset="./img/01_bikevation_profil_480x240.png" media="(max-width:799px)">
-            <img src="./img/01_bikevation_profil_480x240.png" alt="tattoolist profil image">
-          </picture>
-        </div>
-        <!--second row for column-->
-        <div class="column col-md-6 col-lg-5">
-          <div class="my-container">
-          <h3> Bikevation</h3>
-          <p> Every kilometer counts
-            <br> At the CycleHack we created a userjourney to illustrate that: We created a user journey that illustrates, that every cycled kilometer has an influence on urban change. The detailed user flow was sketched via high-fidelity wireframe.
-          </p>
-          <!--buttonlink
-            <a href="">Read more</a> -->
-          <a href="" class="button">Read more</a>
-        </div>
       </div>
-    </div>
-    </div>
-    <!--div id, class, row schliessen-->
+      <!--div id, class, row schliessen-->
   </main>
   <footer>
     <div class="container">
       <h3>Get in Touch</h3>
-      <p>Feel free to <a href="tel:+4915778968741" class="button contact">Call Me</a> or forward simply an <a href="mailto:marlenis.sunrise@gmail.com" class="button contact">Send me an email</a></p>
-      <div>
-        <a href="https://www.linkedin.com/in/tina-schwegler/" target="_blank">
-          <!-- PUBLIC '-//W3C//DTD SVG 1.0//EN' 'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'> -->
-          <svg <svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <g>
-              <path d="M32,30c0,1.104-0.896,2-2,2H2c-1.104,0-2-0.896-2-2V2c0-1.104,0.896-2,2-2h28c1.104,0,2,0.896,2,2V30z" fill="#007BB5" />
-              <g>
-                <rect fill="#FFFFFF" height="14" width="4" x="7" y="11" />
-                <path d="M20.499,11c-2.791,0-3.271,1.018-3.499,2v-2h-4v14h4v-8c0-1.297,0.703-2,2-2c1.266,0,2,0.688,2,2v8h4v-7    C25,14,24.479,11,20.499,11z" fill="#FFFFFF" />
-                <circle cx="9" cy="8" fill="#FFFFFF" r="2" />
-              </g>
-            </g>
-          </svg>
-        </a>
-      </div>
-      <p>Copyright Tina Marleni Schwegler
-      </p>
-    </div>
+      <p>Feel free to <a href="tel:+4915778968741" class="button contact">Call Me</a> or forward simply an <a href="mailto:marlenis.sunrise@gmail.com" class="button contact">Send me an email</a>
+      <br><a href="https://www.linkedin.com/in/tina-schwegler/" target="_blank"> <img src="img/linkedin_32x32.png" style="width: 30px;"></a>
+      <br>Copyright Tina Marleni Schwegler</p>
     </div>
   </footer>
-  <script src="js/scripts.js"></script>
 </body>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
 
 </html>

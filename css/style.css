@@ -20,7 +20,7 @@ body {
 
 header {
   background-color: #E8F8F8;
-  padding: 30px 0px 0px 0px;
+  padding-top: 30px;
   border-bottom: 1px solid #4a4a4a;
   text-align: center;
   webkit-box-shadow: 0px 4px 4px 0px rgba(50, 50, 50, 0.55);
@@ -29,6 +29,16 @@ header {
   position: fixed;
   width: 100%;
   z-index: 100;
+}
+
+footer {
+  border-top: 1px solid #b6b6b6;
+  text-align: center;
+  padding: 15px 0 ;
+}
+
+nav {
+  display: flex;
 }
 
 nav>ul {
@@ -50,12 +60,12 @@ nav>ul>li>a {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  text-align: left;
+  text-align: center;
 }
 
 .container a {
   margin: 0 auto;
-  padding: 10px 10px;
+  padding: 8px 8px;
   position: relative;
   z-index: 0;
   cursor: pointer;
@@ -109,6 +119,8 @@ main {
 h1 {
   font-size: 1.80em;
   font-weight: 600;
+  text-align: left;
+
 }
 
 h2 {
@@ -150,9 +162,11 @@ span {
   font-weight: bold;
 }
 
+
 img {
-  width: 90%;
+  width: 95%;
 }
+
 
 a {
   color: rgb(238, 10, 91);
@@ -173,7 +187,6 @@ a:hover {
   /* needed to override the default link color */
   font-weight: 350;
   text-decoration: none;
-  padding: 10px;
   border-radius: 6px;
   border-bottom: 2px solid rgba(238, 10, 91, 1);
   /* width of the border, type, color */
@@ -195,10 +208,9 @@ a:hover {
 }
 
 .button.contact {
-  background-color: transparent;
-  color: rgba(238, 10, 91, 1) !important;
-  text-transform: uppercase;
-  border: 2px solid rgba(238, 10, 91, 1);
+  background-color: #d4eded;
+  color: #4a4a4a !important;
+  border: 1px solid #b6b6b6;
 }
 
 .button.contact:hover {
@@ -216,16 +228,22 @@ a:hover {
 /* Layout styling */
 .container {
   padding: 0 15px;
-  /* 0 top and bottom, 15 px left and right */
+  /* 0 top and bottom, 70/ before 15 px left and right */
 }
 
 .my-container {
-  padding: 0 15px;
+  padding: 0 20px;
   text-align: left;
+}
+
+
+.logoMenu {
+  padding-left: 20px;
 }
 
 .row {
   margin: 20px 0;
+  text-align: left;
   /* 25px top and bottom, 0 left and right */
 }
 
@@ -236,8 +254,8 @@ a:hover {
 }
 
 #work .row {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #4a4a4a;
+  padding-bottom: 40px;
+  /* border-bottom: 1px solid #4a4a4a;*/
 }
 
 #about-page h2 {
@@ -248,12 +266,12 @@ a:hover {
 #about-page .row {
   padding-top: 5px;
   }*/
+/* Unterzeile nur bei secector work
 
-/* Unterzeile nur bei secector work */
 #hero h1 {
   text-align: center;
-  /* Centers text */
-}
+
+}*/
 
 .logo {
   max-width: 250px;
@@ -263,11 +281,18 @@ a:hover {
   float: left;
 }
 
-
 @keyframes color-changetest {
-  10% {fill: #CD6E85;}
-  30% {fill: #CD6E85;}
-  50% {fill: #CD6E85;}
+  10% {
+    fill: #CD6E85;
+  }
+
+  30% {
+    fill: #CD6E85;
+  }
+
+  50% {
+    fill: #CD6E85;
+  }
 }
 
 #test {
@@ -302,21 +327,38 @@ a:hover {
   animation: 3s cloud-move-reverse infinite alternate linear;
 }
 
-/* Divreihe bei Tattoolist */
-
-.my-flex {
-  display: flex;
-  max-width: 600px;
+.hamburger-menu-icon {
+  display: none;
 }
 
-.my-flex > div {
-  padding: 3px;
+.logoMobil {
+  display: none;
 }
 
+/* ==============================
+For less than 641px
+================================= */
 @media only screen and (max-width: 640px) {
-  .desktop-only {
+  .hamburger-menu-icon {
+    display: block;
+    width: 25px;
+  }
+  nav>ul {
     display: none;
   }
+  .menu-visible{
+    display: block;
+  }
+  .logoMobil {
+    display: block;
+  }
+  .logoDesktop {
+    display: none;
+  }
+  .my-container {
+    padding: 0px 5px 20px;
+    text-align: left;
+    }
 }
 
 /* ==============================
@@ -334,9 +376,10 @@ Medium devices (640px and larger)
     margin-top: 4px;
   }
 
+  /* Text
   body {
     font-size: 15px;
-  }
+  }*/
 
   #hero span {
     display: block;
@@ -359,6 +402,10 @@ Medium devices (640px and larger)
     clear: both;
     display: table;
   }
+
+  .container {
+    padding: 0 80px;
+}
 }
 
 /* ==============================
@@ -377,6 +424,7 @@ Large devices (1024px or larger)
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 80px;
   }
 }
 

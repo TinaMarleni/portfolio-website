@@ -1,1 +1,6 @@
-console.log("Hello! Welcome to my portfolio")
+(function ($){
+$('#hamburgerMenu').click(function(event){
+  event.preventDefault();
+$('#menu').toggleClass('menu-visible');
+});
+})($);
