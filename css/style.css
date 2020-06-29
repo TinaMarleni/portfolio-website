@@ -39,6 +39,7 @@ footer {
 
 nav {
   display: flex;
+  flex-direction: column;
 }
 
 nav>ul {
@@ -104,17 +105,17 @@ main {
   padding-top: 130px;
 }
 
-#hero {
+  /* #hero {
   /* background-color: rgba(252, 252, 195, 0.8);
-  padding: 20px 0; */
+  padding: 20px 0;
   display: inline-block;
   width: 100%;
 }
 
-#hero h1 {
+#hero h2 {
   margin: 0;
-  padding: 0.35em 0;
-}
+  padding: 55px 0;
+}*/
 
 h1 {
   font-size: 1.80em;
@@ -127,6 +128,7 @@ h2 {
   font-size: 1.20em;
   font-weight: 600;
   color: rgba(74, 74, 74, 0.5);
+  margin: 5px 0;
 }
 
 h3 {
@@ -194,14 +196,14 @@ a:hover {
 }
 
 .button:hover {
-  opacity: 0.8;
+  opacity: 0.6;
   /* Reduces the opacity of the button */
   text-decoration: none;
   background-color: rgba(238, 10, 91, 1) !important;
 }
 
 .button:active {
-  opacity: 0.7;
+  opacity: 0.6;
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
   background-color: rgba(238, 10, 91, 1) !important;
@@ -214,15 +216,15 @@ a:hover {
 }
 
 .button.contact:hover {
-  background-color: rgba(238, 10, 91, 0.7);
+  background-color: #2A8192 !important;
   color: #ffffff !important;
-  border: 2px solid rgba(238, 10, 91, 0.7);
+  border: 1px solid #b6b6b6;
 }
 
 .button.active:hover {
-  background-color: rgba(238, 10, 91, 0.7);
+  background-color: #2A8192 !important;
   color: #ffffff !important;
-  border: 2px solid rgba(238, 10, 91, 0.7)
+  border: 1px solid #b6b6b6;
 }
 
 /* Layout styling */
@@ -254,15 +256,16 @@ a:hover {
 }
 
 #work .row {
-  padding-bottom: 40px;
+  padding-bottom: 10px;
   /* border-bottom: 1px solid #4a4a4a;*/
 }
 
-#about-page h2 {
+/*
+  #about-page h3 {
   margin-top: 0;
 }
 
-/*
+
 #about-page .row {
   padding-top: 5px;
   }*/
@@ -341,7 +344,8 @@ a:hover {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
-  box-shadow: 2px 4px 2px 1px rgba(0,0,0,.3);
+  box-shadow: 3px 4px 4px 3px rgba(50, 50, 50, 0.55);
+
 }
 
 #myImg:hover {opacity: 0.7;}
@@ -430,8 +434,13 @@ For less than 641px
     display: none;
   }
   .menu-visible{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
   }
+
   .logoMobil {
     display: block;
   }
@@ -442,6 +451,11 @@ For less than 641px
     padding: 0px 5px 20px;
     text-align: left;
     }
+
+  .logoMenu {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* ==============================
