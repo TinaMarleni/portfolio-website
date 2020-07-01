@@ -150,8 +150,13 @@ h5 {
   text-transform: uppercase
 }
 
+h6 {
+  font-size: 1.37em;
+  font-weight: 300;
+  color: rgba(74, 74, 74, 0.6);
+}
+
 span {
-  text-transform: uppercase;
   color: rgba(238, 10, 91, 1);
 }
 
