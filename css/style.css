@@ -23,9 +23,9 @@ header {
   padding-top: 30px;
   border-bottom: 1px solid #4a4a4a;
   text-align: center;
-  webkit-box-shadow: 0px 4px 4px 0px rgba(50, 50, 50, 0.55);
-  moz-box-shadow: 0px 4px 4px 0px rgba(50, 50, 50, 0.55);
-  box-shadow: 0px 4px 4px 0px rgba(50, 50, 50, 0.55);
+  /* webkit-box-shadow: 0px 4px 4px 0px rgba(50, 50, 50, 0.55); */
+  /* moz-box-shadow: 0px 4px 4px 0px rgba(50, 50, 50, 0.55); */
+  box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.55);
   position: fixed;
   width: 100%;
   z-index: 100;
@@ -44,7 +44,7 @@ nav {
 
 nav>ul {
   list-style-type: none;
-  padding: 0px;
+  padding: 0;
 }
 
 nav>ul>li {
@@ -79,19 +79,19 @@ nav>ul>li>a {
 
 .brackets a:before, .brackets a:after {
   opacity: 0;
-  top: 0px;
+  top: 0;
   transition: all 0.3s;
 }
 
 .brackets a:before {
   content: '(';
-  left: 0px;
+  left: 0;
   transform: translateX(10px);
 }
 
 .brackets a:after {
   content: ')';
-  right: 0px;
+  right: 0;
   transform: translateX(-10px);
 }
 
@@ -127,37 +127,37 @@ h1 {
 h2 {
   font-size: 1.20em;
   font-weight: 600;
-  color: rgba(74, 74, 74, 0.5);
+  color: #F11861;
   margin: 5px 0;
 }
 
 h3 {
   font-size: 1.40em;
   font-weight: 400;
-  color: rgba(238, 10, 91, 1);
+  color: #F11861;
 }
 
 h4 {
   font-size: 1.80em;
   font-weight: 600;
-  color: rgba(74, 74, 74, 0.5);
+  color: #6C6C6C;
 }
 
 h5 {
   font-size: 1.20em;
   font-weight: 500;
-  color: rgba(238, 10, 91, 1);
+  color: #F11861;
   text-transform: uppercase
 }
 
 h6 {
   font-size: 1.37em;
   font-weight: 300;
-  color: rgba(74, 74, 74, 0.6);
+  color: #777676;
 }
 
 span {
-  color: rgba(238, 10, 91, 1);
+  color: #F11861;
 }
 
 /* Extrafarbe optional
@@ -182,20 +182,20 @@ a {
 }
 
 a:hover {
-  color: rgba(238, 10, 91, 1);
+  color: #F11861;
   /* Underlining when hovering over a link */
 }
 
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: rgba(238, 10, 91, 1);
+  background-color: #F11861;
   color: #ffffff !important;
   /* needed to override the default link color */
   font-weight: 350;
   text-decoration: none;
   border-radius: 6px;
-  border-bottom: 2px solid rgba(238, 10, 91, 1);
+  border-bottom: 2px solid #F11861;
   /* width of the border, type, color */
   transition: 0.2s opacity;
 }
@@ -204,14 +204,14 @@ a:hover {
   opacity: 0.6;
   /* Reduces the opacity of the button */
   text-decoration: none;
-  background-color: rgba(238, 10, 91, 1) !important;
+  background-color: #CF577F !important;
 }
 
 .button:active {
   opacity: 0.6;
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
-  background-color: rgba(238, 10, 91, 1) !important;
+  background-color: #CF577F !important;
 }
 
 .button.contact {
@@ -260,7 +260,7 @@ a:hover {
   display: table;
 }
 
-#work .row {
+#work.row {
   padding-bottom: 10px;
   /* border-bottom: 1px solid #4a4a4a;*/
 }
@@ -309,7 +309,7 @@ a:hover {
 
 @keyframes cloud-move {
   from {
-    transform: translate(100, 3px);
+    transform: translate(100px, 3px);
   }
 
   to {
@@ -343,88 +343,43 @@ a:hover {
   display: none;
 }
 
-/*Modal image*/
-/* Style the Image Used to Trigger the Modal */
-#myImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-  box-shadow: 3px 4px 4px 3px rgba(50, 50, 50, 0.55);
-
-}
-
-#myImg:hover {opacity: 0.7;}
-
-/* The Modal (background) */
+/* ==============================
+Modal images
+================================= */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 101; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
+  display: none;
+  background: black;
+  opacity: 0.9;
+  position: fixed;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (Image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
+  bottom:0;
+  left:0;
+  right:0;
   text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
 }
 
-/* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
-  animation-name: zoom;
-  animation-duration: 0.6s;
+.modal-show {
+display: block;
 }
 
-@keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
-}
 
-/* The Close Button */
-.close {
+
+.close-btn {
   position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
+  top: 0;
+  right: 0;
 }
 
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
+
+ul {
+  display: flex;
+  list-style: none;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
+ul > li {
+  padding: 5px;
 }
+
 
 
 /* ==============================
@@ -453,7 +408,7 @@ For less than 641px
     display: none;
   }
   .my-container {
-    padding: 0px 5px 20px;
+    padding: 0 5px 20px;
     text-align: left;
     }
 
