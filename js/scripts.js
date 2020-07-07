@@ -8,12 +8,13 @@
 // Modal images
 (function ($) {
   $('img').click(function (event) {
-    const imageTarget = $(event.target)
-    $('.modal').addClass('modal-show')
-    $('.modal-image').attr('src', imageTarget.attr('data-url'))
-    //  $('.modal-image').attr('src', imageTarget.attr('src'));
-  })
+    const imageTarget = $(event.target);
+    $('.modal').addClass('modal-show');
+     $('.modal-image').attr('src', imageTarget.attr('data-url'));
+      //  $('.modal-image').attr('src', imageTarget.attr('src'));
+  });
+
   $('.close-btn').click(function () {
-    $('.modal').removeClass('modal-show')
+        $('.modal').removeClass('modal-show');
   })
-})($)
+})($);

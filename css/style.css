@@ -1,11 +1,48 @@
 /*
-Colors used option 1:
-lila: rgba(76,37,231,1);
-dark lila: rgba(50,21,163,1)
-rot: rgba(238,10,91,1);
-gelb: rgba(252,252,195,0.5)
-dunkelrot rgba(153,19,43,1)
+background-color: #E8F8F8;
+border: #b6b6b6;
+Textfarbe:   color: #4a4a4a;
+Überschriften
+pink:   color: #F11861;
+grau:   color: #6C6C6C;
+buttons
+grüne buttons
+pinke buttons
 */
+
+/* #hero {
+/* background-color: rgba(252, 252, 195, 0.8);
+padding: 20px 0;
+display: inline-block;
+width: 100%;
+}
+
+#hero h2 {
+margin: 0;
+padding: 55px 0;
+}*/
+
+/*
+  #about-page h3 {
+  margin-top: 0;
+}
+
+
+#about-page .row {
+  padding-top: 5px;
+  }*/
+/* Unterzeile nur bei secector work
+
+#hero h1 {
+  text-align: center;
+
+}*/
+
+/* Text bei desktop
+body {
+  font-size: 15px;
+}*/
+
 body {
   background-color: #ffffff;
   font-family: 'Lato', sans-serif;
@@ -21,10 +58,10 @@ body {
 header {
   background-color: #E8F8F8;
   padding-top: 30px;
-  border-bottom: 1px solid #4a4a4a;
   text-align: center;
-  /* webkit-box-shadow: 0px 4px 4px 0px rgba(50, 50, 50, 0.55); */
-  /* moz-box-shadow: 0px 4px 4px 0px rgba(50, 50, 50, 0.55); */
+  /* border-bottom: 1px solid #4a4a4a;
+  webkit-box-shadow: 0px 4px 4px 0px rgba(50, 50, 50, 0.55);
+  moz-box-shadow: 0px 4px 4px 0px rgba(50, 50, 50, 0.55); */
   box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.55);
   position: fixed;
   width: 100%;
@@ -34,7 +71,12 @@ header {
 footer {
   border-top: 1px solid #b6b6b6;
   text-align: center;
-  padding: 15px 0 ;
+  padding: 15px 0 ; /* Adds 15px to top & bottom and 0px to left and right */
+}
+
+/* Rand von Menuleiste oben */
+main {
+  padding-top: 130px;
 }
 
 nav {
@@ -59,14 +101,14 @@ nav>ul>li>a {
 }
 
 .container {
-  margin: 0 auto;
-  padding: 0 15px;
+  margin: 0 auto;    /* 0 top and bottom, automatisch mittig*/
+  padding: 0 15px;   /* 0 top and bottom, 70/ before 15 px left and right / Ansicht Mobilversion*/
   text-align: center;
 }
 
 .container a {
   margin: 0 auto;
-  padding: 8px 8px;
+  padding: 8px 8px; /* Abstand beim button zum Rand */
   position: relative;
   z-index: 0;
   cursor: pointer;
@@ -100,22 +142,6 @@ nav>ul>li>a {
   transform: translateX(0px);
 }
 
-/* Rand von Menuleiste oben */
-main {
-  padding-top: 130px;
-}
-
-  /* #hero {
-  /* background-color: rgba(252, 252, 195, 0.8);
-  padding: 20px 0;
-  display: inline-block;
-  width: 100%;
-}
-
-#hero h2 {
-  margin: 0;
-  padding: 55px 0;
-}*/
 
 h1 {
   font-size: 1.80em;
@@ -159,11 +185,6 @@ h6 {
 span {
   color: #F11861;
 }
-
-/* Extrafarbe optional
-#specialtext {
-  color: rgba(238, 10, 91, 0.7);
-} */
 
 .intro {
   font-weight: bold;
@@ -232,26 +253,43 @@ a:hover {
   border: 1px solid #b6b6b6;
 }
 
-/* Layout styling */
-.container {
-  padding: 0 15px;
-  /* 0 top and bottom, 70/ before 15 px left and right */
-}
+/* desktop versionen Beginn*/
 
-.my-container {
-  padding: 0 20px;
-  text-align: left;
+.hamburger-menu-icon {
+  display: none;
 }
-
 
 .logoMenu {
   padding-left: 20px;
 }
 
-.row {
-  margin: 20px 0;
+.logoMobil {
+  display: none;
+}
+
+.footerMobil {
+  display: none;
+}
+
+.footerDesktop a{
+  margin: 0 auto;
+  padding: 8px 8px; /* Abstand bei button */
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+/* desktop versionen Ende*/
+
+/* Layout styling */
+
+.my-container {
+  padding: 0 20px; /* 0 top and bottom, 20 px left and right*/
   text-align: left;
-  /* 25px top and bottom, 0 left and right */
+}
+
+.row {
+  /* margin: 20px 0;  oberer Rand der Spalte*/
+  text-align: left;
 }
 
 .row::after {
@@ -265,25 +303,11 @@ a:hover {
   /* border-bottom: 1px solid #4a4a4a;*/
 }
 
-/*
-  #about-page h3 {
-  margin-top: 0;
-}
-
-
-#about-page .row {
-  padding-top: 5px;
-  }*/
-/* Unterzeile nur bei secector work
-
-#hero h1 {
-  text-align: center;
-
-}*/
-
 .logo {
   max-width: 250px;
 }
+
+/* Animation from contact.html */
 
 [class*="col-"] {
   float: left;
@@ -335,13 +359,6 @@ a:hover {
   animation: 3s cloud-move-reverse infinite alternate linear;
 }
 
-.hamburger-menu-icon {
-  display: none;
-}
-
-.logoMobil {
-  display: none;
-}
 
 /* ==============================
 Modal images
@@ -362,14 +379,11 @@ Modal images
 display: block;
 }
 
-
-
 .close-btn {
   position: absolute;
   top: 0;
   right: 0;
 }
-
 
 ul {
   display: flex;
@@ -381,18 +395,23 @@ ul > li {
 }
 
 
-
 /* ==============================
 For less than 641px
 ================================= */
 @media only screen and (max-width: 640px) {
   .hamburger-menu-icon {
     display: block;
-    width: 25px;
+    margin: 10px 2px 8px 8px;
+    width: 22px;
   }
   nav>ul {
     display: none;
   }
+
+.container a {
+  margin-bottom: 20px;
+  }
+
   .menu-visible{
     display: flex;
     flex-direction: column;
@@ -407,6 +426,7 @@ For less than 641px
   .logoDesktop {
     display: none;
   }
+
   .my-container {
     padding: 0 5px 20px;
     text-align: left;
@@ -415,6 +435,17 @@ For less than 641px
   .logoMenu {
     display: flex;
     flex-direction: column;
+  }
+
+  .footerMenu {
+    display: flex;
+    flex-direction: column;
+  }
+  .footerMobil {
+    display: block;
+  }
+  .footerDesktop {
+    display: none;
   }
 }
 
@@ -432,11 +463,6 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 4px;
   }
-
-  /* Text
-  body {
-    font-size: 15px;
-  }*/
 
   #hero span {
     display: block;
