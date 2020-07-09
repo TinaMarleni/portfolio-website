@@ -3,18 +3,14 @@
     event.preventDefault()
     $('#menu').toggleClass('menu-visible')
   })
-})($)
-
-// Modal images
-(function ($) {
+  // Modal images
   $('img').click(function (event) {
     const imageTarget = $(event.target);
     $('.modal').addClass('modal-show');
-     $('.modal-image').attr('src', imageTarget.attr('data-url'));
-      //  $('.modal-image').attr('src', imageTarget.attr('src'));
+    $('.modal-image').attr('src', imageTarget.attr('data-url'));
+    //  $('.modal-image').attr('src', imageTarget.attr('src'));
   });
-
   $('.close-btn').click(function () {
-        $('.modal').removeClass('modal-show');
-  })
+    $('.modal').removeClass('modal-show');
+  });
 })($);

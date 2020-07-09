@@ -139,6 +139,7 @@ h5 {
   font-size: 1.20em;
   font-weight: 500;
   color: #F11861;
+  margin: 0.5em 0;
   text-transform: uppercase
 }
 
@@ -146,6 +147,7 @@ h6 {
   font-size: 1.37em;
   font-weight: 300;
   color: #777676;
+  margin: 0.6em 0 3em 0;
 }
 
 span {
@@ -327,13 +329,24 @@ Modal images
 .modal {
   display: none;
   background: black;
-  opacity: 0.9;
+  opacity: 1;
   position: fixed;
+  overflow:scroll;
   top: 0;
   bottom:0;
   left:0;
   right:0;
   text-align: center;
+  z-index: 100;
+}
+
+.modalclickable{
+  cursor: pointer;
+}
+
+.modal-image {
+  width: 80%;
+  padding: 50px 0;
 }
 
 .modal-show {
@@ -342,8 +355,8 @@ display: block;
 
 .close-btn {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 10px;
 }
 
 ul {
@@ -409,6 +422,11 @@ For less than 641px
     display: none;
   }
 
+  #Ebene_1 {
+    height: 200px;
+    width: 300px;
+  }
+
 }
 
 /* ==============================
@@ -451,6 +469,9 @@ Medium devices (640px and larger)
   .container {
     padding: 0 80px;
 }
+
+
+
 }
 
 /* ==============================
