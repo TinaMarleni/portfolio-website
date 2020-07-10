@@ -3,7 +3,7 @@ background-color: #E8F8F8;
 border: #b6b6b6;
 Textfarbe:   color: #4a4a4a;
 Überschriften
-pink:   color: #F11861;
+pink:   color: #F11861; Neu grün #2DA668
 grau:   color: #6C6C6C;
 buttons
 grüne buttons
@@ -470,7 +470,11 @@ Medium devices (640px and larger)
     padding: 0 80px;
 }
 
-
+ul {
+  display: flex;
+  list-style: none;
+  margin: 5px 0;
+}
 
 }
 
