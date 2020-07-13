@@ -23,12 +23,12 @@ body {
 }
 
 header {
-  background-color: #E8F8F8;
+  background-color: #E7F8D5;
   padding-top: 30px;
   text-align: center;
   /* border-bottom: 1px solid #4a4a4a;
   webkit-box-shadow: 0px 4px 4px 0px rgba(50, 50, 50, 0.55);
-  moz-box-shadow: 0px 4px 4px 0px rgba(50, 50, 50, 0.55); */
+  moz-box-shadow: 0px 4px 4px 0px rgba(50, 50, 50, 0.55); #E8F8F8; #E5EFDA #DEF5C6 #E7F8D5*/
   box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.55);
   position: fixed;
   width: 100%;
@@ -246,6 +246,10 @@ a:hover {
   z-index: 0;
   cursor: pointer;
 }
+
+.footerDesktop {
+  z-index: 0;
+}
 /* desktop versionen Ende*/
 
 /* Layout styling */
@@ -425,6 +429,14 @@ For less than 641px
   #Ebene_1 {
     height: 200px;
     width: 300px;
+  }
+
+  header {
+    padding-top: 15px;
+  }
+
+  main {
+    padding-top: 170px;
   }
 
 }
