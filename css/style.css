@@ -247,10 +247,15 @@ a:hover {
   cursor: pointer;
 }
 
-.footerDesktop {
+.flowerDesktop {
+  margin: 0 auto;
+  position: relative;
   z-index: 0;
 }
+
+
 /* desktop versionen Ende*/
+
 
 /* Layout styling */
 
