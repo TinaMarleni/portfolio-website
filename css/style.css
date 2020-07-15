@@ -23,7 +23,7 @@ body {
 }
 
 header {
-  background-color: #E7F8D5;
+  background-color: #E8F8F8;
   padding-top: 30px;
   text-align: center;
   /* border-bottom: 1px solid #4a4a4a;
@@ -282,15 +282,15 @@ a:hover {
 
 @keyframes color-changetest {
   10% {
-    fill: #CD6E85;
+    fill: #E8F8F8;
   }
 
   30% {
-    fill: #CD6E85;
+    fill: #679D46;
   }
 
-  50% {
-    fill: #CD6E85;
+  20% {
+    fill: #679D46;
   }
 }
 
