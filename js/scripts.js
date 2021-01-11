@@ -4,7 +4,7 @@
     $('#menu').toggleClass('menu-visible')
   })
   // Modal images
-  $('img').click(function (event) {
+  $('.modalclickable').click(function (event) {
     const imageTarget = $(event.target);
     $('.modal').addClass('modal-show');
     $('.modal-image').attr('src', imageTarget.attr('data-url'));
