@@ -25,10 +25,13 @@ header {
   background-color: #E8F8F8;
   padding-top: 30px;
   text-align: center;
-  /* border-bottom: 1px solid #4a4a4a;
+  /*
+  box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.55);
+
+  border-bottom: 1px solid #4a4a4a;
   webkit-box-shadow: 0px 4px 4px 0px rgba(50, 50, 50, 0.55);
   moz-box-shadow: 0px 4px 4px 0px rgba(50, 50, 50, 0.55); #E8F8F8; #E5EFDA #DEF5C6 #E7F8D5*/
-  box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.55);
+  box-shadow: 0 4px 15px 0 rgba(50, 50, 50, 0.35);
   position: fixed;
   width: 100%;
   z-index: 100;
@@ -121,14 +124,14 @@ h1 {
 h2 {
   font-size: 1.20em;
   font-weight: 600;
-  color: #F11861;
+  color: #4a4a4a;
   margin: 5px 0;
 }
 
 h3 {
   font-size: 1.40em;
   font-weight: 400;
-  color: #F11861;
+  color: #4a4a4a;
 }
 
 h4 {
@@ -140,7 +143,9 @@ h4 {
 h5 {
   font-size: 1.20em;
   font-weight: 500;
-  color: #F11861;
+  background: -webkit-linear-gradient(#72b632, #339966);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin: 0.5em 0;
   text-transform: uppercase
 }
@@ -153,7 +158,9 @@ h6 {
 }
 
 span {
-  color: #F11861;
+  background: -webkit-linear-gradient(#72b632, #339966);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .intro {
@@ -165,60 +172,64 @@ img {
 }
 
 a {
-  color: rgb(238, 10, 91);
+  color: rgb(51, 153, 102);
   text-decoration: none;
   /* No underlining */
 }
 
 a:hover {
-  color: #F11861;
+  color: rgba(51, 153, 102, 0.5);
   /* Underlining when hovering over a link */
 }
 
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #F11861;
-  color: #ffffff !important;
+  background-color: rgba(51, 153, 102, 0.25);
+  color: #339966 !important;
   /* needed to override the default link color */
+  box-shadow:
+      1px 8px 15px 0 rgba(0, 0, 0, 0.21),
+      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
   font-weight: 350;
   text-decoration: none;
-  border-radius: 6px;
-  border-bottom: 2px solid #F11861;
-  /* width of the border, type, color */
+  border-radius: 5px;
+  /* width of the border, type, color border: 2px solid #72b632 */
   transition: 0.2s opacity;
 }
 
 .button:hover {
-  opacity: 0.6;
-  /* Reduces the opacity of the button */
   text-decoration: none;
-  background-color: #CF577F !important;
+  background-color: #E8F8F8 !important;
+  box-shadow:
+      1px 8px 15px 0 rgba(51, 153, 102, 0.5),
+      -1px -8px 15px 0 rgba(255, 255, 255, 0.3);
 }
 
 .button:active {
-  opacity: 0.6;
-  /* Reduces the opacity of the button to 80% */
+  /* opacity: 0.6; Reduces the opacity of the button to 80% */
   text-decoration: none;
-  background-color: #CF577F !important;
+  background-color: #E8F8F8 !important;
 }
 
+/* unterer button */
+
 .button.contact {
-  background-color: #d4eded;
-  color: #4a4a4a !important;
-  border: 1px solid #b6b6b6;
+  background-color: #E8F8F8;
+  color: #339966 !important;
+  /* border: 1px solid #b6b6b6;*/
 }
 
 .button.contact:hover {
-  background-color: #2A8192 !important;
-  color: #ffffff !important;
-  border: 1px solid #b6b6b6;
+  background-color: #E8F8F8 !important;
+  color: #339966 !important;
+  /* border: 1px solid #b6b6b6;*/
 }
 
 .button.active:hover {
-  background-color: #2A8192 !important;
-  color: #ffffff !important;
-  border: 1px solid #b6b6b6;
+  background-color: #E8F8F8 !important;
+  color: #339966 !important;
+  /* border: 1px solid #b6b6b6;*/
 }
 
 /* desktop versionen Beginn*/
@@ -252,7 +263,7 @@ a:hover {
   justify-content: center;
   padding: 30px 0 50px 0;
   background-color: white;
-  background-image: url("../img/blumen_footer.svg");
+  /* background-image: url("../img/blumen_footer.svg");*/
   background-size: 1260px 250px;
   background-repeat: no-repeat;
 }
