@@ -185,12 +185,12 @@ a:hover {
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: rgba(51, 153, 102, 0.25);
-  color: #339966 !important;
+  background-color: #E8F8F8;
+  color: #4a4a4a !important;
   /* needed to override the default link color */
   box-shadow:
-      1px 8px 15px 0 rgba(0, 0, 0, 0.21),
-      -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+      1px 4px 10px 0 rgba(0, 0, 0, 0.21),
+      -1px -4px 10px 0 rgba(255, 255, 255, 0.3);
   font-weight: 350;
   text-decoration: none;
   border-radius: 5px;
@@ -202,8 +202,8 @@ a:hover {
   text-decoration: none;
   background-color: #E8F8F8 !important;
   box-shadow:
-      1px 8px 15px 0 rgba(51, 153, 102, 0.5),
-      -1px -8px 15px 0 rgba(255, 255, 255, 0.3);
+      1px 8px 10px 0 rgba(51, 153, 102, 0.5),
+      -1px -8px 10px 0 rgba(255, 255, 255, 0.3);
 }
 
 .button:active {
